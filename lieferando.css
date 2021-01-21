@@ -1,0 +1,393 @@
+body {
+    margin: 0;
+    font-family: Calibri;
+}
+
+.header-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    background-color: rgb(255, 123, 0);
+    z-index: 2;
+    color: white;
+}
+
+.header-container img {
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.adress input {
+    border: none;
+    border-radius: 4px;
+}
+
+.header-navbar {
+    margin-bottom: 40px;
+}
+
+.header-navbar img {
+    width: 4vw;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.restaurant {
+    position: fixed;
+    overflow-y: scroll;
+    top: 100px;
+    left: 0;
+    right: 350px;
+    height: calc(100vh - 80px);
+    scroll-behavior: smooth;
+}
+
+.shopping-basket {
+    position: fixed;
+    width: 350px;
+    top: 100px;
+    bottom: 0;
+    right: 0;
+    border-left: 1px solid lightgray;
+}
+
+.adress {
+    display: flex;
+    justify-content: space-around;
+    display: contents;
+}
+
+.adressDiv {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.restaurant-header {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.icon {
+    height: 21px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.headline {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 40px;
+}
+
+.menubar {
+    background-color: whitesmoke;
+    height: 80px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menubar-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon2 {
+    height: 24px;
+    width: 24px;
+}
+
+.icon3 {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.menubar a {
+    text-decoration: none;
+    color: black;
+}
+
+.menubar a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.menu-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-img {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid whitesmoke;
+    margin-top: 20px;
+}
+
+.menu-headline {
+    background-color: whitesmoke;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.25em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border: 1px solid whitesmoke;
+}
+
+#foodcontainer {
+    width: 100%;
+}
+
+.dish {
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.dish span {
+    cursor: pointer;
+}
+
+.dish-structure {
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurantLogoContainer {
+    width: calc(100vw - 350px);
+    height: 150px;
+    position: absolute;
+    top: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+.restaurantLogo {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.restaurantLogo img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+.bill-row {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bill-column {
+    display: flex;
+}
+
+.total-price-container {
+    margin: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.items-container {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+h3 {
+    text-align: center;
+    padding-left: 120px !important;
+}
+
+.d-none {
+    display: none;
+}
+
+.price {
+    color: darkorange;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.sumcheck {
+    padding: 10px;
+    text-align: center;
+    font-size: small;
+}
+
+.basketButton {
+    margin: 20px;
+    width: 90%;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    background: darkgrey;
+    border: none;
+}
+
+.basketButtonBlue {
+    background-color: #286090;
+}
+
+.basket-bottom-bar {
+    display: flex;
+    height: 72px;
+    font-weight: 400;
+    width: 100%;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    padding: 12px;
+}
+
+.basket-bottom-button {
+    border-top: solid lightgrey 1px;
+    width: 100%;
+}
+
+.basket-button-icon {
+    top: 50%;
+    left: 22px;
+    position: absolute;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+@media (min-width: 800px) {
+    .show-mobile {
+        display: none;
+    }
+}
+
+@media(max-width: 800px) {
+    .d-none {
+        display: none;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    .basketButton {
+        margin: 20px;
+        width: 90%;
+        height: 40px;
+        color: white;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        border: none;
+    }
+    .restaurant {
+        right: 0px !important;
+    }
+    .basket-button-icon {
+        top: 37% !important;
+        left: 22px;
+        position: absolute;
+    }
+    img {
+        vertical-align: middle;
+        border-style: none;
+    }
+    .restaurantLogoContainer {
+        width: 100%;
+    }
+    .adress {
+        top: 8vh;
+        display: contents;
+        justify-content: space-around;
+        align-items: center;
+        left: 7vw;
+    }
+    .logo {
+        position: absolute;
+        top: 1vh;
+    }
+    .header-navbar img {
+        width: 8vw;
+        cursor: pointer;
+    }
+    .shopping-basket {
+        top: 0 !important;
+        position: fixed;
+        background-color: #fff;
+        z-index: 101;
+        width: 100% !important;
+        bottom: 0;
+        right: 0;
+    }
+    h3 {
+        padding-left: 40px !important;
+        margin: 40px !important;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .xBtn {
+        font-weight: 400;
+        font-size: .75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        padding-right: 12px;
+    }
+}

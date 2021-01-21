@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeinLieferservice.at</title>
+    <link rel="stylesheet" href="lieferando.css">
+    <script src="lieferando.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+</head>
+
+<body onload="loadMenu()">
+
+    <div id="header" class="header-container">
+
+        <div class="logo">
+            <a href="index.html"><img class="logo-img" src="img/logo1.png"></a>
+            DeinLieferservice.at
+        </div>
+        <div class="adress">
+            <div class="adressDiv">
+                <span class="material-icons">
+                    location_on
+                </span>
+                <input maxlength="100" placeholder="Lieferadresse eingeben">
+            </div>
+            <div class="header-navbar">
+                <a href="#"> <img src="img/bars-solid.svg"> </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="restaurant">
+        <div>
+            <img class="restaurant-header" src="img/menu-img.jpg">
+        </div>
+
+        <div class="restaurantLogoContainer">
+            <div class="restaurantLogo">
+                <img src="img/restaurant_logo.png">
+            </div>
+        </div>
+
+        <div class="headline"></div>
+
+        <div class="menubar">
+            <div class="menubar-left">
+                <span class="icon2 material-icons"> search </span>
+            </div>
+            <div class="menubar-right"> <a href="#salads">Salate</a>
+                <a href="#pizzas">Pizza</a>
+                <a href="#pasta">Pasta</a>
+                <a href="#drinks">Getränke</a>
+            </div>
+        </div>
+
+        <div class="menu">
+
+            <div id="food" class="menu-container">
+                <div class="menu-headline">Beliebte Gerichte</div>
+                <input type="text" id="search" onkeyup="filterNames()">
+            </div>
+            <div id="foodcontainer"></div>
+
+        </div>
+    </div>
+
+    <div id="shopping-basket" class="shopping-basket hide-mobile">
+        <div style="display:flex;">
+            <h3>Warenkorb</h3>
+            <img class="basket-button-close show-mobile xBtn" src="img/close-black-18dp.svg" onclick="closeBasket()">
+        </div>
+        <div id="items" class="items-container"></div>
+
+        <div class="total-price-container">
+            <div class="bill-row">
+                <div>Zwischensumme</div>
+                <div id="subtotal">0.00 €</div>
+            </div>
+            <div class="bill-row">
+                <div id="delivery" class="d-none">Lieferkosten</div>
+                <div id="delivery-costs" class="d-none">1.50 €</div>
+            </div>
+            <div class="bill-row">
+                <div><b>Gesamt</b></div>
+                <div id="total-price">0.00 €</div>
+            </div>
+        </div>
+        <div class="sumcheck" id="sumcheck">
+            <br> Du hast den Mindestbestellwert von 10€ noch nicht erreicht.
+        </div>
+
+        <button class="basketButton btn" onclick="startorder()" id="orderbutton">Jetzt Bestellen</button>
+
+    </div>
+
+
+    <nav class="basket-bottom-nav show-mobile d-none" id="basket-btn">
+
+
+    </nav>
+
+</body>
+
+</html>
